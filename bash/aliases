@@ -1,0 +1,30 @@
+alias zipr="zip -r"
+alias downloads="cd ~/Downloads"
+alias dropbox="cd ~/Dropbox"
+alias documents="cd ~/Documents"
+alias reload="source ~/bin/dotfiles/bash/aliases"
+alias ea="vim ~/bin/dotfiles/bash/aliases && reload"
+alias g='git status'
+alias gad='git add .'
+alias gc='git commit -v'
+alias gcm='git commit -v -m'
+alias gca='git commit -v -a'
+alias gp='git push origin master'
+alias todo='vim ~/Dropbox/todo.txt'
+alias ls='ls -lrthG' 
+alias lsg='ls | grep --color'
+alias finder='open .'
+alias pynotebook='ipython notebook --pylab inline'
+
+# commit pending changes and quote all args as message
+function gg(){
+    git commit -v -a -m "$*"
+}
+
+function take {
+    mkdir $1
+    cd $1
+}
+
+
+
